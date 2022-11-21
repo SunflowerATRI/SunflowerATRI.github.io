@@ -2388,6 +2388,9 @@ figure.highlight pre .javascript .function {
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-link {
   margin: 0 4px;
 }
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap time {
+  display: none;
+}
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
   color: #858585;
 }
@@ -2457,6 +2460,11 @@ h1.page-title + .tag-cloud-list {
   overflow: hidden;
   margin-top: 20px;
   padding: 20px 24px;
+}
+@media screen and (max-width: 768px) {
+  #aside-content .card-widget:not(#card-toc) {
+    display: none;
+  }
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
@@ -3442,6 +3450,9 @@ h1.page-title + .tag-cloud-list {
 #post-info #post-meta a:hover {
   color: #b22222;
   text-decoration: underline;
+}
+#post-info #post-meta time {
+  display: none;
 }
 #nav {
   position: absolute;
